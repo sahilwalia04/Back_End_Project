@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .signup-container {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            width: 350px;
+        }
+        
+        .signup-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .signup-form form input {
+            width: 94%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .signup-form button:hover {
+            background-color: #0056b3;
+        }
+        
+        .signup-form p {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .signup-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .signup-form a:hover {
+            text-decoration: underline;
+        }
+            .main {
+            
+            background-image: url('./img/img5.jpg');
+            background-size: cover;
+            background-position: center;
+            animation: rotateBackground 30s infinite; 
+        }@keyframes rotateBackground {
+            0% {
+                background-image: url('./img/img5.jpg');
+            }
+            33.33% {
+                background-image: url('./img/img6.jpg');
+            }
+            66.66% {
+                background-image: url('./img/img7.jpg');
+            }
+            100% {
+                background-image: url('./img/img8.jpg');
+            }
+        }
+
+    </style>
+</head>
+<body  class="main">
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>Sign Up</h1>
+            <form action="#">
+                <input id="firstname" type="text" placeholder="First Name">
+                <input id="lastname" type="text" placeholder="Last Name">
+                <input id="email" type="email" placeholder="Email">
+                <input id="password" type="password" placeholder="Password">
+                <input id="repassword" type="password" placeholder="Confirm Password">
+                <button id="signupButton" type="button">Sign Up</button>
+            </form>
+            <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+            <p>Already have an account? <a href="./indexLogin.html">Log In</a></p>
+        </div>
+    </div>
+    <script src="./signup.js"></script>
+</body>
+</html>
